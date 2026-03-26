@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
 import joblib
+import os
+port = int(os.environ.get("PORT", 10000))
 
 st.title("DOA Estimation: MUSIC vs ML")
 
